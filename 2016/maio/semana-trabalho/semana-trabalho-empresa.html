@@ -1,4 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8"> <!-- utf-8 works for most cases -->
@@ -20,7 +21,7 @@
 
     <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
     <!--[if !mso]><!-->
-    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
     <!--<![endif]-->
 
     <!-- Web Font / @font-face : END -->
@@ -42,11 +43,12 @@
         * {
             -ms-text-size-adjust: 100%;
             -webkit-text-size-adjust: 100%;
+            font-family: 'Roboto', sans-serif;
         }
 
         /* What is does: Centers email on Android 4.4 */
         div[style*="margin: 16px 0"] {
-            margin:0 !important;
+            margin: 0 !important;
         }
 
         /* What it does: Stops Outlook from adding extra spacing to tables. */
@@ -63,13 +65,14 @@
             table-layout: fixed !important;
             Margin: 0 auto !important;
         }
+
         table table table {
             table-layout: auto;
         }
 
         /* What it does: Uses a better rendering method when resizing images in IE. */
         img {
-            -ms-interpolation-mode:bicubic;
+            -ms-interpolation-mode: bicubic;
         }
 
         /* What it does: Overrides styles added when Yahoo's auto-senses a link. */
@@ -80,7 +83,7 @@
         /* What it does: A work-around for iOS meddling in triggered links. */
         .mobile-link--footer a,
         a[x-apple-data-detectors] {
-            color:inherit !important;
+            color: inherit !important;
             text-decoration: underline !important;
         }
 
@@ -94,6 +97,7 @@
         .button-a {
             transition: all 100ms ease-in;
         }
+
         .button-td:hover,
         .button-a:hover {
             background: #555555 !important;
@@ -104,154 +108,229 @@
 
 </head>
 <body width="100%" height="100%" bgcolor="#f3f2f0" style="margin: 0;">
-<table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#f3f2f0" style="border-collapse:collapse;"><tr><td valign="top">
-    <center style="width: 100%;">
+<table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" bgcolor="#f3f2f0"
+       style="border-collapse:collapse;">
+    <tr>
+        <td valign="top">
+            <center style="width: 100%;">
 
-        <!-- Visually Hidden Preheader Text : BEGIN -->
-        <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">
-            (Optional) This text will appear in the inbox preview, but not the email body.
-        </div>
-        <!-- Visually Hidden Preheader Text : END -->
+                <!-- Visually Hidden Preheader Text : BEGIN -->
+                <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;">
+                    Simplifique sua forma de contratar
+                </div>
+                <!-- Visually Hidden Preheader Text : END -->
 
-        <!--
-            Set the email width. Defined in two places:
-            1. max-width for all clients set with Outlook, allowing the email to squish on narrow but never go wider than 600px.
-            2. MSO tags for Desktop Windows Outlook enforce a 600px width.
-        -->
-        <div style="max-width: 600px;">
-            <!--[if (gte mso 9)|(IE)]>
-            <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
-                <tr>
-                    <td>
-            <![endif]-->
+                <!--
+                    Set the email width. Defined in two places:
+                    1. max-width for all clients set with Outlook, allowing the email to squish on narrow but never go wider than 600px.
+                    2. MSO tags for Desktop Windows Outlook enforce a 600px width.
+                -->
+                <div style="max-width: 600px;background-color:#009688">
+                    <!--[if (gte mso 9)|(IE)]>
+                    <table cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+                        <tr>
+                            <td>
+                    <![endif]-->
 
-            <!-- Email Header : BEGIN -->
-            <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
-                <tr>
-                    <td style="padding: 20px 0; text-align: center">
-                        <a href="http://profissa.net">
-                            <img src="http://static.profissa.net/emails/commons/images/logo-oficial.png" width="200" height="50" alt="alt_text" border="0">
-                        </a>
-                    </td>
-                </tr>
-            </table>
-            <!-- Email Header : END -->
-
-            <!-- Email Body : BEGIN -->
-            <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="100%" style="max-width: 600px;">
-
-                <!-- Hero Image, Flush : BEGIN -->
-                <tr>
-                    <td>
-                        <img src="http://static.profissa.net/emails/2016/maio/semana-trabalho/images/semana-trabalho-empresa-01.png" width="600" height="" alt="alt_text" border="0" align="center" style="width: 100%; max-width: 600px;">
-                    </td>
-                </tr>
-                <!-- Hero Image, Flush : END -->
-
-                <!-- Tagline Topo : BEGIN -->
-                <tr>
-                    <td bgcolor="#f3f2f0" style="padding: 20px 0; font-family: sans-serif; font-size: 20px; mso-height-rule: exactly; line-height: 24px; color: #009688;text-align: center;">
-                        Simplifique sua forma de contratar
-                    </td>
-                </tr>
-                <!-- Tagline Topo : END -->
-
-                <!-- 1 Column Text + Button : BEGIN -->
-                <tr>
-                    <td>
-                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                                <td style="padding: 40px; font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555;">
-                                    Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.
-                                    <br><br>
-                                    <!-- Button : Begin -->
-                                    <table cellspacing="0" cellpadding="0" border="0" align="center" style="Margin: auto;">
-                                        <tr>
-                                            <td style="border-radius: 3px; background: #222222; text-align: center;" class="button-td">
-                                                <a href="http://www.google.com" style="background: #222222; border: 15px solid #222222; font-family: sans-serif; font-size: 13px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: bold;" class="button-a">
-                                                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ffffff">A Button</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- Button : END -->
-                                    <br>
-                                    Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut&nbsp;erat.
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <!-- 1 Column Text + Button : BEGIN -->
-
-                <!-- 2 Even Columns : BEGIN -->
-                <tr>
-                    <td bgcolor="#ffffff" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 40px">
-                        <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:560px;">
-                            <tr>
-                                <td align="center" valign="top" width="50%">
-                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
-                                        <tr>
-                                            <td style="text-align: center; padding: 0 10px;">
-                                                <img src="http://placehold.it/200" width="200" alt="" style="border: 0;width: 100%;max-width: 200px;" class="center-on-narrow">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="text-align: center;font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
-                                                Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora per conubia nostra, per torquent inceptos&nbsp;himenaeos.
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                                <td align="center" valign="top" width="50%">
-                                    <table cellspacing="0" cellpadding="0" border="0" width="100%" style="font-size: 14px;text-align: left;">
-                                        <tr>
-                                            <td style="text-align: center; padding: 0 10px;">
-                                                <img src="http://placehold.it/200" width="200" alt="" style="border: 0;width: 100%;max-width: 200px;" class="center-on-narrow">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="text-align: center;font-family: sans-serif; font-size: 15px; mso-height-rule: exactly; line-height: 20px; color: #555555; padding: 10px 10px 0;" class="stack-column-center">
-                                                Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora per conubia nostra, per torquent inceptos&nbsp;himenaeos.
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                        <!--[if mso]>
-                        </td>
+                    <!-- Email Header : BEGIN -->
+                    <table cellspacing="0" cellpadding="0" border="0" align="left" width="100%" style="max-width: 600px;">
+                        <tr>
+                            <td style="padding-top: 15px;padding-right: 40px;padding-bottom: 15px;padding-left: 40px" align="left">
+                                <a href="http://profissa.net">
+                                    <img class="left" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block;border: none;height: auto;line-height: 100%;width: 150px;max-width: 150px" align="left" border="0" src="http://static.profissa.net/emails/commons/images/logo-line-branco.png" alt="Profissa" title="Profissa" width="150">
+                                </a>
+                            </td>
                         </tr>
-                        </table>
-                        <![endif]-->
+                    </table>
+                    <!-- Email Header : END -->
+
+                    <!-- Email Body : BEGIN -->
+                    <table cellspacing="0" cellpadding="0" border="0" align="center" bgcolor="#ffffff" width="100%"
+                           style="max-width: 600px;">
+
+                        <!-- Hero Image, Flush : BEGIN -->
+                        <tr>
+                            <td>
+                                <img src="http://static.profissa.net/emails/2016/maio/semana-trabalho/images/semana-trabalho-empresa-01.png"
+                                     width="600" height="" alt="Encontre o candidato ideal" border="0" align="center"
+                                     style="width: 100%; max-width: 600px;">
+                            </td>
+                        </tr>
+                        <!-- Hero Image, Flush : END -->
+
+                        <!-- Tagline Topo : BEGIN -->
+                        <tr>
+                            <td bgcolor="#f3f2f0"
+                                style="padding: 20px 0;  font-size: 20px; mso-height-rule: exactly; line-height: 24px; color: #009688;text-align: center;">
+                                <strong>Simplifique sua forma de contratar</strong>
+                            </td>
+                        </tr>
+                        <!-- Tagline Topo : END -->
+
+                        <!-- 1 Column Text : BEGIN -->
+                        <tr>
+                            <td>
+                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="padding: 40px 40px 30px 40px;  font-size: 18px; mso-height-rule: exactly; line-height: 24px; color: #555555;">
+                                            Esteja no comando do seu processo de seleção através de nossos <strong>recursos poderosos:</strong>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- 1 Column Text : BEGIN -->
+
+                        <!-- 1 Column Text : BEGIN -->
+                        <tr>
+                            <td>
+                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td style="padding: 0 40px 40px 40px;  font-size: 18px; mso-height-rule: exactly; line-height: 28px; color: #488dbc;">
+                                            <strong>- Filtros de busca precisos</strong><br>
+                                            <strong>- Acesso imediato ao banco de candidatos</strong><br>
+                                            <strong>- Gerenciamento de currículos online</strong><br>
+                                            <strong>- Mais visibilidade para sua vaga</strong><br>
+                                            <strong>- Design fácil e intuitivo</strong>
+                                            <br><br>
+                                            <!-- Button : Begin -->
+                                            <table cellspacing="0" cellpadding="0" border="0" align="left"
+                                                   style="Margin: auto;">
+                                                <tr>
+                                                    <td style="border-radius: 3px; background: #488dbc; text-align: center;" class="button-td">
+                                                        <a href="https://uploads.intercomcdn.com/i/o/6064015/0ca617e82520c3df487dcf26/Apresentacao_Profissa2.pdf"
+                                                           style="background: #488dbc; border: 15px solid #488dbc;  font-size: 18px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: normal;"
+                                                           class="button-a">
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <span style="color:#ffffff">saiba mais</span>
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- Button : END -->
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- 1 Column Text : BEGIN -->
+
+                        <!-- Cadastre-se e Receba : BEGIN -->
+                        <tr>
+                            <td bgcolor="#f3f2f0"
+                                style="padding: 40px 40px 30px 40px;  font-size: 24px; mso-height-rule: exactly; line-height: 30px; color: #009688;text-align: center;">
+                                <strong>CADASTRE-SE E RECEBA</strong>
+                            </td>
+                        </tr>
+                        <!-- Cadastre-se e Receba : END -->
+
+                        <!-- 2 Even Columns : BEGIN -->
+                        <tr>
+                            <td bgcolor="#f3f2f0" align="center" height="100%" valign="top" width="100%"
+                                style="padding-bottom: 40px">
+                                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%"
+                                       style="max-width:560px;">
+                                    <tr>
+                                        <td align="center" valign="top" width="30%">
+                                            <table cellspacing="0" cellpadding="0" border="0" width="100%"
+                                                   style="font-size: 14px;text-align: left;">
+                                                <tr>
+                                                    <td style="text-align: right; padding: 0 10px;">
+                                                        <img src="http://static.profissa.net/emails/2016/maio/semana-trabalho/images/semana-trabalho-empresa-02.png" width="200" alt="150 créditos por mês, durante três meses"
+                                                             style="border: 0;width: 100%;max-width: 145px;"
+                                                             class="center-on-narrow">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td align="center" valign="top" width="70%">
+                                            <table cellspacing="0" cellpadding="0" border="0" width="100%"
+                                                   style="font-size: 14px;text-align: left;">
+                                                <tr>
+                                                    <td style="text-align: left; font-size: 19px; mso-height-rule: exactly; line-height: 26px; color: #555555; padding: 10px 10px 0;"
+                                                        class="stack-column-center">
+                                                        O que dá pra fazer com esses créditos?
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: left; font-size: 16px; mso-height-rule: exactly; line-height: 26px; color: #555555; padding: 20px 10px;"
+                                                        class="stack-column-center">
+                                                        - 4 vagas, durante 7 dias + 10 perfis liberados <i>ou</i><br>
+                                                        - 1 vaga durante 30 dias <i>ou</i><br>
+                                                        - 150 perfil liberados
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if mso]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                        <!-- Two Even Columns : END -->
+
+                        <!-- CTA Comece Agora : BEGIN -->
+                        <tr>
+                            <td bgcolor="#f3f2f0"
+                                style="padding: 0 40px 40px 40px;  font-size: 24px; mso-height-rule: exactly; line-height: 30px; color: #009688;text-align: center;">
+                                <!-- Button : Begin -->
+                                <table cellspacing="0" cellpadding="0" border="0" align="center"
+                                       style="Margin: auto;">
+                                    <tr>
+                                        <td style="border-radius: 3px; background: #009688; text-align: center;" class="button-td">
+                                            <a href="http://profissa.net/company/login"
+                                               style="background: #009688; border: 15px solid #009688;  font-size: 18px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 3px; font-weight: normal;"
+                                               class="button-a">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span style="color:#ffffff">comece agora</span>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- Button : END -->
+                            </td>
+                        </tr>
+                        <!-- CTA Comece Agora : END -->
+
+                        <!-- Rodapé : BEGIN -->
+                        <tr>
+                            <td bgcolor="#009688"
+                                style="padding: 40px 40px 30px 40px;  font-size: 14px; mso-height-rule: exactly; line-height: 20px; color: #ffffff;text-align: center;">
+
+                                <a href="https://www.facebook.com/ProfissaNet/" title="Facebook" target="_blank">
+                                    <img src="http://static.profissa.net/emails/2016/abril/lancamento/images/facebook.png" alt="Facebook" title="Facebook" width="32">
+                                </a>
+
+                                <a href="http://www.instagram.com/profissanet/" title="Instagram" target="_blank">
+                                    <img src="http://static.profissa.net/emails/2016/abril/lancamento/images/instagram.png" alt="Instagram" title="Instagram" width="32">
+                                </a>
+
+                                <br><br>
+
+                                Em caso de dúvidas, fique à vontade para responder esse email ou entrar em contato no
+                                <a href="mailto:contato@profissa.net" style="color:#ffffff;text-decoration: underline;">contato@profissa.net</a>
+                            </td>
+                        </tr>
+                        <!-- Rodapé : END -->
+
+                    </table>
+                    <!-- Email Body : END -->
+
+                    <!--[if (gte mso 9)|(IE)]>
                     </td>
-                </tr>
-                <!-- Two Even Columns : END -->
-
-            </table>
-            <!-- Email Body : END -->
-
-            <!-- Email Footer : BEGIN -->
-            <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
-                <tr>
-                    <td style="padding: 40px 10px;width: 100%;font-size: 12px; font-family: sans-serif; mso-height-rule: exactly; line-height:18px; text-align: center; color: #888888;">
-                        <webversion style="color:#cccccc; text-decoration:underline; font-weight: bold;">View as a Web Page</webversion>
-                        <br><br>
-                        Company Name<br><span class="mobile-link--footer">123 Fake Street, SpringField, OR, 97477 US</span><br><span class="mobile-link--footer">(123) 456-7890</span>
-                        <br><br>
-                        <unsubscribe style="color:#888888; text-decoration:underline;">unsubscribe</unsubscribe>
-                    </td>
-                </tr>
-            </table>
-            <!-- Email Footer : END -->
-
-            <!--[if (gte mso 9)|(IE)]>
-            </td>
-            </tr>
-            </table>
-            <![endif]-->
-        </div>
-    </center>
-</td></tr></table>
+                    </tr>
+                    </table>
+                    <![endif]-->
+                </div>
+            </center>
+        </td>
+    </tr>
+</table>
 </body>
 </html>
